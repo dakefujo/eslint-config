@@ -4,9 +4,7 @@ const index = {
         'plugin:@typescript-eslint/recommended'
         //"plugin:@typescript-eslint/recommended-requiring-type-checking"
     ],
-    plugins: [
-        '@typescript-eslint'
-    ],
+    plugins: ['@typescript-eslint'],
     rules: {
         '@typescript-eslint/ban-types': ['warn'],
         '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -17,6 +15,18 @@ const index = {
                 'argsIgnorePattern': '^_',
                 'varsIgnorePattern': '^_'
             }
+        ],
+        'indent': [
+            'error',
+            4,
+            { 'SwitchCase': 1 }
+        ],
+        'no-extra-semi': 'error',
+        'no-unexpected-multiline': 'error',
+        'no-unreachable': 'error',
+        'quotes': [
+            'error',
+            'single'
         ],
         'semi': [
             'error',
@@ -33,18 +43,6 @@ const index = {
         'semi-style': [
             'error',
             'first'
-        ],
-        'no-extra-semi': 'error',
-        'no-unexpected-multiline': 'error',
-        'no-unreachable': 'error',
-        'indent': [
-            'error',
-            4,
-            { 'SwitchCase': 1 }
-        ],
-        'quotes': [
-            'error',
-            'single'
         ]
     }
 }
