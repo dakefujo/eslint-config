@@ -1,10 +1,9 @@
-const index = {
+export = {
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended'
         //"plugin:@typescript-eslint/recommended-requiring-type-checking"
     ],
-    plugins: ['@typescript-eslint'],
     rules: {
         '@typescript-eslint/ban-types': ['warn'],
         '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -46,5 +45,3 @@ const index = {
         ]
     }
 }
-
-export = index
