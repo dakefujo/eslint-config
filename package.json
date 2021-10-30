@@ -1,0 +1,35 @@
+{
+    "name": "@glamseam/eslint-config",
+    "version": "0.1.0",
+    "description": "Eslint Config.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "author": "__d",
+    "license": "MIT",
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/glamseam/eslint-config"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/glamseam"
+    },
+    "scripts": {
+        "build": "tsc",
+        "pub": "npm run build && npm publish"
+    },
+    "peerDependencies": {
+        "eslint": "^8.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.1.0",
+        "typescript": "^4.4.4"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.2.0",
+        "@typescript-eslint/parser": "^5.2.0"
+    }
+}
