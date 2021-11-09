@@ -2,7 +2,7 @@ export = {
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended'
-        //"plugin:@typescript-eslint/recommended-requiring-type-checking"
+        //'plugin:@typescript-eslint/recommended-requiring-type-checking'
     ],
     rules: {
         '@typescript-eslint/ban-types': ['warn'],
@@ -15,6 +15,13 @@ export = {
                 'varsIgnorePattern': '^_'
             }
         ],
+        'comma-dangle': ['error', {
+            'arrays': 'never',
+            'objects': 'never',
+            'imports': 'never',
+            'exports': 'never',
+            'functions': 'never'
+        }],
         'indent': [
             'error',
             4,
