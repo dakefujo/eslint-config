@@ -30,9 +30,14 @@ export = {
         'no-extra-semi': 'error',
         'no-unexpected-multiline': 'error',
         'no-unreachable': 'error',
+        'no-param-reassign': [
+            'error',
+            { 'props': true }
+        ],
         'quotes': [
             'error',
-            'single'
+            'single',
+            { 'allowTemplateLiterals': true }
         ],
         'semi': [
             'error',
