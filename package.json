@@ -1,6 +1,6 @@
 {
     "name": "@d-gs/eslint-config",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "description": "Eslint Config.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
