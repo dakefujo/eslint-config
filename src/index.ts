@@ -32,7 +32,7 @@ export = {
         'no-unreachable': 'error',
         'no-param-reassign': [
             'error',
-            { 'props': true }
+            { 'props': false }
         ],
         'quotes': [
             'error',
