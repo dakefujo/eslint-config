@@ -1,9 +1,11 @@
 {
     "name": "@d-gs/eslint-config",
-    "version": "0.3.0",
+    "version": "0.4.2",
     "description": "Eslint Config.",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
     "files": [
         "dist"
     ],
@@ -22,18 +24,29 @@
         "url": "https://github.com/glamseam/eslint-config/issues"
     },
     "scripts": {
-        "build": "tsc",
-        "pub": "pnpm build && npm publish --access=public"
+        "build": "unbuild",
+        "pub": "pnpm build && pnpm publish --access=public"
     },
     "peerDependencies": {
-        "eslint": "^8.0.0"
+        "eslint": "^8.57.1 || ^9.0.0",
+        "eslint-plugin-vue": "^9.20.1"
+    },
+    "peerDependenciesMeta": {
+        "eslint-plugin-vue": {
+            "optional": true
+        }
     },
     "devDependencies": {
-        "eslint": "^8.57.0",
-        "typescript": "^5.3.3"
+        "@d-gs/prettier-config": "^0.4.0",
+        "@types/eslint": "^9.6.1",
+        "@types/eslint__js": "^8.42.3",
+        "eslint": "^9.10.0",
+        "eslint-plugin-vue": "^9.28.0",
+        "typescript": "^5.6.2",
+        "unbuild": "^2.0.0"
     },
     "dependencies": {
-        "@typescript-eslint/eslint-plugin": "^7.3.1",
-        "@typescript-eslint/parser": "^7.3.1"
+        "@eslint/js": "^9.10.0",
+        "typescript-eslint": "^8.6.0"
     }
 }
