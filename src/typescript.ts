@@ -35,6 +35,8 @@ export const tsConfig: Linter.Config[] = [
                     checksVoidReturn: false
                 }
             ],
+            '@typescript-eslint/no-deprecated': 'warn',
+            '@typescript-eslint/no-non-null-assertion': 'warn',
             '@typescript-eslint/no-redundant-type-constituents': 'off',
             '@typescript-eslint/no-unsafe-argument': 'off',
             '@typescript-eslint/no-unsafe-assignment': 'off',
@@ -45,6 +47,13 @@ export const tsConfig: Linter.Config[] = [
                 {
                     argsIgnorePattern: '^_',
                     varsIgnorePattern: '^_'
+                }
+            ],
+            '@typescript-eslint/non-nullable-type-assertion-style': 'warn',
+            '@typescript-eslint/restrict-template-expressions': [
+                'error',
+                {
+                    allowNumber: true
                 }
             ],
             '@typescript-eslint/strict-boolean-expressions': [

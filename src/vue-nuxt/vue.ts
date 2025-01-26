@@ -1,5 +1,4 @@
 import type { Linter } from 'eslint'
-// @ts-ignore
 import vue from 'eslint-plugin-vue'
 import ts from 'typescript-eslint'
 
@@ -53,7 +52,8 @@ export const vueConfig: Linter.Config[] = [
                     ignorePatterns: ['RouterLink', 'RouterView']
                 }
             ],
-            'vue/no-v-text-v-html-on-component': ['error']
+            'vue/no-v-text-v-html-on-component': ['error'],
+            'vue/prefer-use-template-ref': 'warn'
         }
     }
 ]

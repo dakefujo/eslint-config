@@ -1,4 +1,4 @@
-import prettierConfig from '@d-gs/prettier-config'
+import prettierConfig from '@dakefujo/prettier-config'
 
 const config = {
     ...prettierConfig

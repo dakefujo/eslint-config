@@ -1,35 +1,46 @@
 {
-    "name": "@d-gs/eslint-config",
-    "version": "0.4.2",
-    "description": "Eslint Config.",
     "type": "module",
+    "name": "@dakefujo/eslint-config",
+    "version": "1.0.0",
+    "description": "Eslint config.",
     "main": "./dist/index.cjs",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.cjs",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        },
+        "./vue-nuxt": {
+            "require": "./dist/vue-nuxt/index.cjs",
+            "import": "./dist/vue-nuxt/index.mjs",
+            "types": "./dist/vue-nuxt/index.d.ts"
+        }
+    },
     "files": [
         "dist"
     ],
-    "author": "__d",
+    "author": "Dake Fujo",
     "license": "MIT",
     "keywords": [
         "eslint",
         "config",
-        "typescript"
+        "typescript",
+        "vue"
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/glamseam/eslint-config.git"
+        "url": "git+https://github.com/dakefujo/eslint-config.git"
     },
-    "bugs": {
-        "url": "https://github.com/glamseam/eslint-config/issues"
-    },
+    "packageManager": "pnpm@9.15.4",
     "scripts": {
         "build": "unbuild",
         "pub": "pnpm build && pnpm publish --access=public"
     },
     "peerDependencies": {
         "eslint": "^8.57.1 || ^9.0.0",
-        "eslint-plugin-vue": "^9.20.1"
+        "eslint-plugin-vue": "^9.31.0"
     },
     "peerDependenciesMeta": {
         "eslint-plugin-vue": {
@@ -37,16 +48,17 @@
         }
     },
     "devDependencies": {
-        "@d-gs/prettier-config": "^0.4.0",
+        "@dakefujo/prettier-config": "^1.0.0",
+        "@dakefujo/ts-config": "^1.0.0",
         "@types/eslint": "^9.6.1",
         "@types/eslint__js": "^8.42.3",
-        "eslint": "^9.10.0",
-        "eslint-plugin-vue": "^9.28.0",
-        "typescript": "^5.6.2",
-        "unbuild": "^2.0.0"
+        "eslint": "^9.19.0",
+        "eslint-plugin-vue": "^9.32.0",
+        "typescript": "^5.7.3",
+        "unbuild": "^3.3.1"
     },
     "dependencies": {
-        "@eslint/js": "^9.10.0",
-        "typescript-eslint": "^8.6.0"
+        "@eslint/js": "^9.19.0",
+        "typescript-eslint": "^8.21.0"
     }
 }
