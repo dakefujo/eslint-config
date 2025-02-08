@@ -1,7 +1,7 @@
-import prettierConfig from '@dakefujo/prettier-config'
+import { defaultConfig } from '@dakefujo/prettier-config'
 
 const config = {
-    ...prettierConfig
+    ...defaultConfig
 }
 
 export default config
