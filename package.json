@@ -33,7 +33,7 @@
         "type": "git",
         "url": "git+https://github.com/dakefujo/eslint-config.git"
     },
-    "packageManager": "pnpm@9.15.4",
+    "packageManager": "pnpm@9.15.5",
     "scripts": {
         "build": "unbuild",
         "pub": "pnpm build && pnpm publish --access=public"
@@ -48,17 +48,17 @@
         }
     },
     "devDependencies": {
-        "@dakefujo/prettier-config": "^1.0.0",
+        "@dakefujo/prettier-config": "^1.1.0",
         "@dakefujo/ts-config": "^1.0.0",
         "@types/eslint": "^9.6.1",
         "@types/eslint__js": "^8.42.3",
-        "eslint": "^9.19.0",
+        "eslint": "^9.20.0",
         "eslint-plugin-vue": "^9.32.0",
         "typescript": "^5.7.3",
         "unbuild": "^3.3.1"
     },
     "dependencies": {
-        "@eslint/js": "^9.19.0",
-        "typescript-eslint": "^8.21.0"
+        "@eslint/js": "^9.20.0",
+        "typescript-eslint": "^8.23.0"
     }
 }
